@@ -12,14 +12,17 @@ function AppLayout() {
   return (
     // grid adjust the layout
     // h-screen to cover all gaps of the browser
-    <div className="textColor flex h-screen flex-col gap-y-4 bg-back-light transition delay-75 duration-200 ease-in dark:bg-back-dark">
+    <div className="textColor flex h-screen flex-col gap-y-4 bg-back-light dark:bg-back-dark">
       {/* transition duration-200 delay-75 ease-in */}
       {/* {isLoading && <Loader />} */}
       {/* {true && <Loader />} */}
       {/* 
       <header className="items-center justify-between space-y-4  py-6 font-semibold 
       uppercase sm:px-10 md:flex md:space-y-0 "> */}
-      <header ref={ref} className="px-8 pb-3 pt-3 shadow dark:shadow-stone-900">
+      <header
+        ref={ref}
+        className="px-8 pb-3 pt-3 shadow shadow-primary-lm dark:shadow-primary-dm"
+      >
         <HeaderContent />
       </header>
       {/* overflow-scroll - add scroll inside the main content only without the header and footer */}
