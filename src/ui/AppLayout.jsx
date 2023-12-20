@@ -23,15 +23,14 @@ function AppLayout() {
         <HeaderContent />
       </header>
       {/* overflow-scroll - add scroll inside the main content only without the header and footer */}
-
-      <main className="mx-auto flex items-center justify-center ">
-        {/* <h1>Content</h1> */}
-        <Outlet />
-      </main>
-
-      <footer>
-        <FooterContent />
-      </footer>
+      <div className="flex flex-col gap-4 overflow-scroll py-3">
+        <main>
+          <Outlet />
+        </main>
+        <footer>
+          <FooterContent />
+        </footer>
+      </div>
     </div>
   );
 }
