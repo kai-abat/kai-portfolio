@@ -5,8 +5,10 @@ function TechStack() {
     { name: 'Javacript', iconName: 'logos:javascript' },
     { name: 'React', iconName: 'logos:react' },
     { name: 'React Router', iconName: 'devicon:reactrouter' },
-    { name: 'Styled Components', iconName: 'skill-icons:styledcomponents' },
     { name: 'React Query', iconName: 'logos:react-query-icon' },
+    { name: 'Redux Toolkit', iconName: 'logos:redux' },
+    { name: 'Styled Components', iconName: 'skill-icons:styledcomponents' },
+    { name: 'Tailwind', iconName: 'devicon:tailwindcss' },
     { name: 'Supabase', iconName: 'logos:supabase-icon' },
   ];
 
