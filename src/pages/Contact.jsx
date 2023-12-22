@@ -14,7 +14,7 @@ function Contact() {
       <div className=" text-xl font-semibold tracking-wider ">
         Don't be shy! Hit me up! 👇
       </div>
-      <div className="flex items-center justify-evenly gap-5">
+      <div className="flex flex-wrap items-center justify-evenly gap-5">
         <div>Email: Kai.balsamo.abat@gmail.com</div>
         <div>Linkedin: Kai.balsamo.abat@gmail.com</div>
       </div>

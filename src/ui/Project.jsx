@@ -23,7 +23,7 @@ const Image = ({ photo }) => {
 
 const Details = ({ title, description, githubUrl, demoUrl, techUse }) => {
   return (
-    <div className="flex h-[20rem] w-[30rem] flex-col gap-y-5 rounded-lg px-6 py-3 dark:bg-stone-900 md:w-[40rem]">
+    <div className="flex h-[20rem] w-[10] flex-col gap-y-5 rounded-lg px-4 py-3 dark:bg-stone-900 xs:w-[25rem] sm:w-[35rem] md:w-[40rem]">
       <Title title={title} />
       <Description description={description} />
       <TechUse techs={techUse} />
