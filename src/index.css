@@ -23,12 +23,20 @@
   }
 
   .transition1 {
-    @apply transition-all duration-200 ease-in;
+    @apply transition-all delay-75 duration-200 ease-in-out;
+  }
+
+  .transition2 {
+    @apply transition-all delay-75 duration-300 ease-in-out;
   }
 
   /* border-none border-r-2 shadow-sm cursor-pointer text-lg px-2 py-2 font-semibold text-center uppercase bg-none text-zinc-900 dark:text-zinc-100 */
   .button {
-    @apply h-10 rounded-lg px-2 py-0 font-semibold capitalize tracking-wide transition delay-75 duration-200 ease-in hover:bg-zinc-200 focus:outline-none disabled:cursor-not-allowed dark:hover:bg-stone-900;
+    @apply buttonHover h-10 rounded-lg px-2 py-0 font-semibold capitalize tracking-wide focus:outline-none disabled:cursor-not-allowed;
+  }
+
+  .buttonHover {
+    @apply transition2 hover:bg-zinc-200 dark:hover:bg-stone-600;
   }
 
   .textColor {
@@ -37,6 +45,14 @@
 
   .h1 {
     @apply text-4xl font-bold;
+  }
+
+  .textShadow {
+    text-shadow: 2px 1px 3px theme(colors.stone.700);
+  }
+
+  .textShadowNone {
+    text-shadow: none;
   }
 
   /* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */

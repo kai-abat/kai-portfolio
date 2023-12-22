@@ -2,7 +2,7 @@ import OtherProfile from './OtherProfile';
 
 function Profile() {
   return (
-    <div className="flex items-center justify-center gap-y-5 ">
+    <div id="profile" className="flex items-center justify-center gap-y-5 ">
       <div className=" mt-20 flex flex-col items-center justify-center gap-2">
         <p className="text-2xl font-bold tracking-wide sm:text-4xl md:tracking-wider lg:text-5xl">
           Hi, I am Chaim Abat.

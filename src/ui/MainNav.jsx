@@ -36,7 +36,7 @@ function MainNav() {
       }`}
     >
       {navs.map(({ name, to, icon }) => (
-        <li>
+        <li key={name}>
           <Link
             className={`button flex items-center justify-items-center gap-3 ${
               winWidth < 768 && 'mx-8'

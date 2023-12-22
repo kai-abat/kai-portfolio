@@ -1,3 +1,4 @@
+import Portfolio from '../ui/Portfolio';
 import Profile from '../ui/Profile';
 import TechStack from '../ui/TechStack';
 
@@ -6,6 +7,7 @@ function Home() {
     <div className=" mx-8 flex flex-col items-center justify-center gap-5 sm:mx-20 ">
       <Profile />
       <TechStack />
+      <Portfolio />
       <div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
