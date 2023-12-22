@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from 'react';
 
 const AppContext = createContext();
 
@@ -8,10 +8,6 @@ function AppProvider({ children }) {
   const toggleNavBar = () => {
     setShowNav((cur) => !cur);
   };
-
-  useEffect(() => {
-    console.log(showNav);
-  }, [showNav]);
 
   return (
     <AppContext.Provider value={{ showNav, toggleNavBar }}>
@@ -23,7 +19,7 @@ function AppProvider({ children }) {
 function useApp() {
   const context = useContext(AppContext);
   if (context === undefined) {
-    throw new Error("AppContext was used outside of AppProvider");
+    throw new Error('AppContext was used outside of AppProvider');
   }
   return context;
 }

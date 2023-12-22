@@ -7,8 +7,12 @@ import { useApp } from '../context/AppContext';
 // import Loader from "./Loader";
 
 function AppLayout() {
-  const { toggleNavBar } = useApp();
-  const ref = useOutsideClick(toggleNavBar);
+  const { toggleNavBar, showNav } = useApp();
+
+  const handleToggleNavBar = () => {
+    showNav ? toggleNavBar() : null;
+  };
+  const ref = useOutsideClick(handleToggleNavBar);
   return (
     // grid adjust the layout
     // h-screen to cover all gaps of the browser

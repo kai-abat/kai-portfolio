@@ -7,7 +7,7 @@ import {
 import { useDarkMode } from '../context/DarkModeContext';
 import { useApp } from '../context/AppContext';
 
-function ButtonIcon({ onClick, type }) {
+function ButtonIcon({ onClick, type, label }) {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
   const { showNav } = useApp();
   const iconStyle = 'h-5 w-5';
@@ -22,6 +22,9 @@ function ButtonIcon({ onClick, type }) {
     ) : (
       <HiOutlineSun className={iconStyle} />
     );
+    if (label) {
+      label = !isDarkMode ? 'Dark Theme' : 'Light Theme';
+    }
   }
 
   // handle = toggleDarkMode;
@@ -43,10 +46,12 @@ function ButtonIcon({ onClick, type }) {
 
   return (
     <button
-      className="button flex items-center justify-center"
+      className={`button flex items-center  ${
+        label ? 'mx-8 gap-2' : 'justify-center'
+      }`}
       onClick={handle ? handle : ''}
     >
-      {icon ? icon : 'No Icon'}
+      {icon ? icon : 'No Icon'} {label && label}
     </button>
   );
 }

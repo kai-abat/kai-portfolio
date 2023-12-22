@@ -1,17 +1,25 @@
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Button from './Button';
 import ButtonIcon from './ButtonIcon';
 import { useApp } from '../context/AppContext';
+import {
+  HiOutlineHome,
+  HiOutlinePhone,
+  HiOutlineRocketLaunch,
+} from 'react-icons/hi2';
+import useMediaScreen from '../hooks/useMediaScreen';
+import useWindowDimensions from '../hooks/useWindowDimensions';
 
 function MainNav() {
   const navigate = useNavigate();
+  const mediaScreen = useMediaScreen();
+  const { width: winWidth } = useWindowDimensions();
   const { showNav } = useApp();
   // const { toggleDarkMode, isDarkMode } = useDarkMode();
   const navs = [
-    { name: 'Home', to: '/' },
-    { name: 'About Me', to: '/about' },
-    { name: 'Projects', to: '/projects' },
-    { name: 'Contact Us', to: '/contact' },
+    { name: 'Home', to: '/', icon: <HiOutlineHome /> },
+    { name: 'Projects', to: '/projects', icon: <HiOutlineRocketLaunch /> },
+    { name: 'Contact Us', to: '/contact', icon: <HiOutlinePhone /> },
   ];
 
   return (
@@ -27,12 +35,23 @@ function MainNav() {
           : 'top-[60px] opacity-95 ease-in'
       }`}
     >
-      {navs.map(({ name, to }) => (
-        <Button key={name} onClick={() => navigate(to)}>
-          {name}
-        </Button>
+      {navs.map(({ name, to, icon }) => (
+        <li>
+          <Link
+            className={`button flex items-center justify-items-center gap-3 ${
+              winWidth < 768 && 'mx-8'
+            }`}
+            to={to}
+          >
+            {winWidth < 768 && icon} {name}
+          </Link>
+        </li>
+
+        // <Button key={name} onClick={() => navigate(to)}>
+        //   {winWidth < 768 && icon} {name}
+        // </Button>
       ))}
-      <ButtonIcon type="dark-mode" />
+      <ButtonIcon type="dark-mode" label={winWidth < 768 && 'Dark Mode'} />
     </ul>
   );
 }
