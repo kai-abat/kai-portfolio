@@ -1,5 +1,5 @@
 function FooterContent() {
-  return <>Footer Footer Footer Footer Footer</>;
+  return <>Copyright © {new Date().getFullYear()}. Develop by Kai.</>;
 }
 
 export default FooterContent;

@@ -1,6 +1,7 @@
 import Portfolio from '../ui/Portfolio';
 import Profile from '../ui/Profile';
 import TechStack from '../ui/TechStack';
+import Contact from './Contact';
 
 function Home() {
   return (
@@ -8,46 +9,7 @@ function Home() {
       <Profile />
       <TechStack />
       <Portfolio />
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          a, ratione amet dolore animi explicabo consectetur ullam doloremque
-          magnam fugiat incidunt ducimus, libero quisquam quibusdam, culpa
-          laboriosam exercitationem qui.
-        </p>
-      </div>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          a, ratione amet dolore animi explicabo consectetur ullam doloremque
-          magnam fugiat incidunt ducimus, libero quisquam quibusdam, culpa
-          laboriosam exercitationem qui.
-        </p>
-      </div>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          a, ratione amet dolore animi explicabo consectetur ullam doloremque
-          magnam fugiat incidunt ducimus, libero quisquam quibusdam, culpa
-          laboriosam exercitationem qui.
-        </p>
-      </div>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          a, ratione amet dolore animi explicabo consectetur ullam doloremque
-          magnam fugiat incidunt ducimus, libero quisquam quibusdam, culpa
-          laboriosam exercitationem qui.
-        </p>
-      </div>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam
-          a, ratione amet dolore animi explicabo consectetur ullam doloremque
-          magnam fugiat incidunt ducimus, libero quisquam quibusdam, culpa
-          laboriosam exercitationem qui.
-        </p>
-      </div>
+      <Contact />
     </div>
   );
 }

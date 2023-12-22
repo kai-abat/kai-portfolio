@@ -10,8 +10,13 @@ function AppLayout() {
   const { toggleNavBar, showNav } = useApp();
 
   const handleToggleNavBar = () => {
-    showNav ? toggleNavBar() : null;
+    if (showNav) {
+      toggleNavBar();
+    } else {
+      return null;
+    }
   };
+
   const ref = useOutsideClick(handleToggleNavBar);
   return (
     // grid adjust the layout
@@ -34,7 +39,7 @@ function AppLayout() {
         <main>
           <Outlet />
         </main>
-        <footer>
+        <footer className=" mt-6 flex items-center justify-center border-t-2 border-t-primary-lm pb-3 pt-8 dark:border-t-primary-dm">
           <FooterContent />
         </footer>
       </div>

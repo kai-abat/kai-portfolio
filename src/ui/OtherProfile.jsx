@@ -1,5 +1,3 @@
-import { Icon } from '@iconify/react';
-import { useDarkMode } from '../context/DarkModeContext';
 import LinkIcon from './LinkIcon';
 
 function OtherProfile() {
