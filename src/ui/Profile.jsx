@@ -1,25 +1,23 @@
-import OtherProfile from "./OtherProfile";
+import OtherProfile from './OtherProfile';
 
 function Profile() {
   return (
-    <div className="flex gap-5 justify-evenly items-center mt-20">
-      <div className="flex flex-col gap-8">
-        <div className="h1">
-          Front-End ReactJs Developer <span>👨‍💻</span>
-        </div>
-        <div>
-          Hi welcome to my portfolio 💼.
-          <br />
-          I&apos;m Chaim Abat A.K.A. Kai. A passionate Front-End React Developer
-        </div>
+    <div className="flex items-center justify-center gap-y-5 ">
+      <div className="flex flex-col items-center justify-center gap-2">
+        <p className="text-2xl font-bold tracking-wide sm:text-4xl md:tracking-wider lg:text-5xl">
+          Hi, I am Chaim Abat.
+        </p>
+        <p className="text-lg font-semibold tracking-wide">
+          Front-End Developer
+        </p>
+        <p className=" mt-9 sm:mx-16 lg:mx-28 lg:w-[30rem]">
+          I'm a junior front-end developer based in philippines. I'm pasionate
+          about crafting user-friendly web experience with a strong foundation.
+          I stay updated on the latest trends and eager to contribute to
+          innovative projects.
+        </p>
+
         <OtherProfile />
-      </div>
-      <div>
-        <img
-          className=" rounded-full aspect-square w-96 "
-          src="my.jpg"
-          alt="me"
-        />
       </div>
     </div>
   );
