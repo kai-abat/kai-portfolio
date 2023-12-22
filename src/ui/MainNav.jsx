@@ -4,17 +4,21 @@ import ButtonIcon from './ButtonIcon';
 import { useApp } from '../context/AppContext';
 import {
   HiOutlineHome,
+  HiOutlineMoon,
   HiOutlinePhone,
   HiOutlineRocketLaunch,
+  HiOutlineSun,
 } from 'react-icons/hi2';
 import useMediaScreen from '../hooks/useMediaScreen';
 import useWindowDimensions from '../hooks/useWindowDimensions';
+import { useDarkMode } from '../context/DarkModeContext';
 
 function MainNav() {
   const navigate = useNavigate();
   const mediaScreen = useMediaScreen();
   const { width: winWidth } = useWindowDimensions();
   const { showNav } = useApp();
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
   // const { toggleDarkMode, isDarkMode } = useDarkMode();
   const navs = [
     { name: 'Home', to: '/', icon: <HiOutlineHome /> },
@@ -36,22 +40,20 @@ function MainNav() {
       }`}
     >
       {navs.map(({ name, to, icon }) => (
-        <li key={name}>
-          <Link
-            className={`button flex items-center justify-items-center gap-3 ${
-              winWidth < 768 && 'mx-8'
-            }`}
-            to={to}
-          >
-            {winWidth < 768 && icon} {name}
-          </Link>
-        </li>
-
-        // <Button key={name} onClick={() => navigate(to)}>
-        //   {winWidth < 768 && icon} {name}
-        // </Button>
+        <ButtonIcon key={name} onClick={() => navigate(to)}>
+          {winWidth < 768 && icon} {name}
+        </ButtonIcon>
       ))}
-      <ButtonIcon type="dark-mode" label={winWidth < 768 && 'Dark Mode'} />
+
+      <ButtonIcon onClick={toggleDarkMode}>
+        {!isDarkMode ? (
+          <HiOutlineMoon className="h-5 w-5" />
+        ) : (
+          <HiOutlineSun className="h-5 w-5" />
+        )}
+        {winWidth < 768 && !isDarkMode && 'Dark Theme'}
+        {winWidth < 768 && isDarkMode && 'Light Theme'}
+      </ButtonIcon>
     </ul>
   );
 }

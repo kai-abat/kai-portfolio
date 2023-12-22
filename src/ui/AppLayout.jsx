@@ -35,11 +35,11 @@ function AppLayout() {
         <HeaderContent />
       </header>
       {/* overflow-scroll - add scroll inside the main content only without the header and footer */}
-      <div className="flex flex-col gap-4 overflow-scroll py-3">
+      <div className="flex flex-col gap-4 overflow-scroll px-10 py-3 md:px-14">
         <main>
           <Outlet />
         </main>
-        <footer className=" mt-6 flex items-center justify-center border-t-2 border-t-primary-lm pb-3 pt-8 dark:border-t-primary-dm">
+        <footer className=" mt-6 flex items-center justify-center border-t-2 border-t-stone-200 pb-3 pt-8 dark:border-t-stone-800">
           <FooterContent />
         </footer>
       </div>

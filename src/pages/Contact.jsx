@@ -1,7 +1,11 @@
+import { useApp } from '../context/AppContext';
+
 function Contact() {
+  const { contactRef } = useApp();
   return (
     <div
       id="contact"
+      ref={contactRef}
       className=" gap mt-16 flex w-full flex-col items-start justify-center gap-6"
     >
       <div className="w-full text-xl font-semibold uppercase tracking-wide text-primary-lm dark:text-primary-dm">

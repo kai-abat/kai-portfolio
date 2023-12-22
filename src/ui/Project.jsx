@@ -3,9 +3,13 @@ import ProjectDemoUrl from './ProjectDemoUrl';
 import TechUse from './TechUse';
 import Title from './Title';
 
-const Project = ({ children }) => {
+const Project = ({ children, position }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-10 sm:flex-row">
+    <div
+      className={`flex items-center justify-center gap-10 md:flex-row ${
+        position !== 'left' ? 'flex-col-reverse' : 'flex-col'
+      }`}
+    >
       {children}
     </div>
   );
@@ -13,17 +17,13 @@ const Project = ({ children }) => {
 
 const Image = ({ photo }) => {
   return (
-    <img
-      className=" h-[20rem] w-[20rem] basis-1/2 rounded-lg "
-      src={photo}
-      alt=""
-    />
+    <img className=" h-[20rem] w-[25rem] rounded-lg " src={photo} alt="" />
   );
 };
 
 const Details = ({ title, description, githubUrl, demoUrl, techUse }) => {
   return (
-    <div className="flex h-[20rem] w-[40rem] basis-1/2 flex-col gap-y-5 rounded-lg px-6 py-3 dark:bg-stone-900">
+    <div className="flex h-[20rem] w-[30rem] flex-col gap-y-5 rounded-lg px-6 py-3 dark:bg-stone-900 md:w-[40rem]">
       <Title title={title} />
       <Description description={description} />
       <TechUse techs={techUse} />
