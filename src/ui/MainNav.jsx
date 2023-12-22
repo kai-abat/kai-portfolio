@@ -1,5 +1,3 @@
-import { Link, useNavigate } from 'react-router-dom';
-import Button from './Button';
 import ButtonIcon from './ButtonIcon';
 import { useApp } from '../context/AppContext';
 import {
@@ -15,7 +13,7 @@ import { useDarkMode } from '../context/DarkModeContext';
 
 function MainNav() {
   const navigate = useNavigate();
-  const mediaScreen = useMediaScreen();
+
   const { width: winWidth } = useWindowDimensions();
   const { showNav } = useApp();
   const { isDarkMode, toggleDarkMode } = useDarkMode();

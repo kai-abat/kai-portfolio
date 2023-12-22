@@ -1,21 +1,16 @@
-import { createContext, useContext, useEffect, useRef, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 const AppContext = createContext();
 
 function AppProvider({ children }) {
   const [showNav, setShowNav] = useState(false);
-  const profileRef = useRef();
-  const portfolioRef = useRef();
-  const contactRef = useRef();
 
   const toggleNavBar = () => {
     setShowNav((cur) => !cur);
   };
 
   return (
-    <AppContext.Provider
-      value={{ showNav, toggleNavBar, profileRef, portfolioRef, contactRef }}
-    >
+    <AppContext.Provider value={{ showNav, toggleNavBar }}>
       {children}
     </AppContext.Provider>
   );
