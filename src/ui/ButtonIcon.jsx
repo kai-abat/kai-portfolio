@@ -1,7 +1,6 @@
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
 function ButtonIcon({ children, onClick, className }) {
-  const { width: winWidth } = useWindowDimensions();
   return (
     <button
       className={`button ${
