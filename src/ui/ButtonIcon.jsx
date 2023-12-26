@@ -1,12 +1,12 @@
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
-function ButtonIcon({ children, onClick, type, label }) {
+function ButtonIcon({ children, onClick, className }) {
   const { width: winWidth } = useWindowDimensions();
   return (
     <button
-      className={`button flex items-center  ${
-        winWidth < 768 ? 'mx-8 gap-2' : 'justify-center'
-      }`}
+      className={`button ${
+        className ? className : 'flex items-center justify-center'
+      } `}
       onClick={onClick ? onClick : ''}
     >
       {children}

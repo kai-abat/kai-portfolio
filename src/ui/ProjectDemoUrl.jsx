@@ -5,7 +5,7 @@ import LinkIcon from './LinkIcon';
 function ProjectDemoUrl({ githubUrl, demoUrl }) {
   const { isDarkMode } = useDarkMode();
   return (
-    <div className="flex justify-evenly ">
+    <div className="mt-5 flex justify-evenly ">
       <LinkIcon
         text="Code"
         iconName="bi:github"

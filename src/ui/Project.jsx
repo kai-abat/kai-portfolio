@@ -6,7 +6,8 @@ import Title from './Title';
 const Project = ({ children, position }) => {
   return (
     <div
-      className={`flex items-center justify-center gap-10 md:flex-row ${
+      id="project-content"
+      className={`flex h-full w-full items-center justify-center gap-2 rounded-lg bg-stone-100 px-3 py-6 shadow-md dark:bg-stone-800 xl:flex-row xl:items-start xl:justify-evenly ${
         position !== 'left' ? 'flex-col-reverse' : 'flex-col'
       }`}
     >
@@ -17,16 +18,21 @@ const Project = ({ children, position }) => {
 
 const Image = ({ photo }) => {
   return (
-    <img className=" h-[20rem] w-[25rem] rounded-lg " src={photo} alt="" />
+    <div
+      id="project-image"
+      className=" flex h-full w-full items-center justify-center "
+    >
+      <img className="h-full w-full rounded-lg  " src={photo} alt="" />
+    </div>
   );
 };
 
-const Details = ({ title, description, githubUrl, demoUrl, techUse }) => {
+const Details = ({ title, description, githubUrl, demoUrl, iconNames }) => {
   return (
-    <div className="flex h-[20rem] w-[10] flex-col gap-y-5 rounded-lg px-4 py-3 dark:bg-stone-900 xs:w-[25rem] sm:w-[35rem] md:w-[40rem]">
+    <div id="project-details" className="flex h-full w-full flex-col gap-y-5">
       <Title title={title} />
       <Description description={description} />
-      <TechUse techs={techUse} />
+      <TechUse iconNames={iconNames} />
       <ProjectDemoUrl githubUrl={githubUrl} demoUrl={demoUrl} />
     </div>
   );

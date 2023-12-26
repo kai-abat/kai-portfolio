@@ -1,12 +1,12 @@
 export const PAGE_SIZE = 10;
 
 const deviceScreen = {
-  mobileS: { min: "320px", max: "375px" },
-  mobileM: { min: "375px", max: "425px" },
-  mobileM2: { min: "425px", max: "500px" },
-  mobileL: { min: "425px", max: "768px" },
-  tablet: { min: "768px", max: "1024px" },
-  laptop: { min: "1025px", max: "1440px" },
+  mobileS: { min: '320px', max: '375px' },
+  mobileM: { min: '375px', max: '425px' },
+  mobileM2: { min: '425px', max: '500px' },
+  mobileL: { min: '425px', max: '768px' },
+  tablet: { min: '768px', max: '1024px' },
+  laptop: { min: '1025px', max: '1440px' },
 };
 
 // export const DEVICE_MAX_W = {
@@ -24,4 +24,28 @@ export const DEVICE_MAX_W = {
   mobileL: `(max-width: ${deviceScreen.mobileL.max})`,
   tablet: `(max-width:  ${deviceScreen.tablet.max})`,
   laptop: `(max-width:  ${deviceScreen.laptop.max})`,
+};
+
+export const JS_ICON = { name: 'Javacript', iconName: 'logos:javascript' };
+export const REACT_ICON = { name: 'React', iconName: 'logos:react' };
+export const REACT_ROUTER_ICON = {
+  name: 'React Router',
+  iconName: 'devicon:reactrouter',
+};
+export const REACT_QUERY_ICON = {
+  name: 'React Query',
+  iconName: 'logos:react-query-icon',
+};
+export const REDUX_ICON = { name: 'Redux Toolkit', iconName: 'logos:redux' };
+export const STYLED_COMP_ICON = {
+  name: 'Styled Components',
+  iconName: 'skill-icons:styledcomponents',
+};
+export const TAILWIND_ICON = {
+  name: 'Tailwind',
+  iconName: 'devicon:tailwindcss',
+};
+export const SUPABASE_ICON = {
+  name: 'Supabase',
+  iconName: 'logos:supabase-icon',
 };

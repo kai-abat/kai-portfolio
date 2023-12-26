@@ -7,6 +7,9 @@ export default {
     extend: {
       screens: {
         xs: '350px',
+        hd: '1980',
+        t2k: '2560',
+        t4k: '3840',
       },
       fontSize: {
         huge: ['80rem', { lineHeight: '1' }],
@@ -15,7 +18,7 @@ export default {
         screen: '100dvh',
       },
       colors: {
-        'back-dark': '#0f0f0f',
+        'back-dark': '#1c1917',
         'back-light': '#fafaf9',
         'primary-lm': '#008fff',
         'primary-dm': '#45adff',

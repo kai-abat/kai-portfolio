@@ -1,6 +1,6 @@
 const Description = ({ description }) => {
   return (
-    <div className="text-center text-sm font-light text-stone-700 dark:text-stone-400">
+    <div className="text-center indent-10 text-sm font-light text-stone-700 dark:text-stone-400">
       {description}
     </div>
   );

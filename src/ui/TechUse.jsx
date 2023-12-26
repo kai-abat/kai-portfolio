@@ -1,13 +1,7 @@
-import TechName from './TechName';
+import TechIcon from './TechIcon';
 
-function TechUse({ techs }) {
-  return (
-    <div className="flex items-center justify-evenly gap-x-2 font-semibold sm:gap-x-6">
-      {techs.map((tech) => (
-        <TechName key={tech}>{tech}</TechName>
-      ))}
-    </div>
-  );
+function TechUse({ iconNames }) {
+  return <TechIcon iconNames={iconNames} />;
 }
 
 export default TechUse;
