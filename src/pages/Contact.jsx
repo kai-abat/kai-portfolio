@@ -8,7 +8,6 @@ function Contact() {
       </p>
       <div className="flex flex-wrap items-center justify-evenly gap-5">
         <p>Email: Kai.balsamo.abat@gmail.com</p>
-        <p>Linkedin: Kai.balsamo.abat@gmail.com</p>
       </div>
     </Content>
   );
