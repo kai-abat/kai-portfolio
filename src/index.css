@@ -32,7 +32,7 @@
 
   /* border-none border-r-2 shadow-sm cursor-pointer text-lg px-2 py-2 font-semibold text-center uppercase bg-none text-zinc-900 dark:text-zinc-100 */
   .button {
-    @apply buttonHover h-10 rounded-lg px-2 py-0 font-semibold capitalize tracking-wide focus:outline-none disabled:cursor-not-allowed;
+    @apply buttonHover h-10 cursor-pointer rounded-lg px-2 py-0 font-semibold capitalize tracking-wide focus:outline-none disabled:cursor-not-allowed;
   }
 
   .buttonHover {
