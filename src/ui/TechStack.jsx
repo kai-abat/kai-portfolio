@@ -7,6 +7,7 @@ import {
   STYLED_COMP_ICON,
   TAILWIND_ICON,
   SUPABASE_ICON,
+  NEXTJS_ICON,
 } from '../utils/constants';
 import TechIcon from './TechIcon';
 
@@ -14,6 +15,7 @@ function TechStack() {
   const iconNames = [
     JS_ICON,
     REACT_ICON,
+    NEXTJS_ICON,
     REACT_ROUTER_ICON,
     REACT_QUERY_ICON,
     REDUX_ICON,
