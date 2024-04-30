@@ -61,3 +61,7 @@ export const NEXT_UI_ICON = {
   name: 'Next UI',
   iconName: 'simple-icons:nextui',
 };
+export const TYPESCRIPT_ICON = {
+  name: 'TypeScript',
+  iconName: 'devicon:typescript',
+};

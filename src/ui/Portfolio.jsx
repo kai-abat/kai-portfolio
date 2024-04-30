@@ -1,6 +1,7 @@
 import Project from './Project';
 import Content from './Content';
 import {
+  JS_ICON,
   NEXTJS_ICON,
   NEXT_UI_ICON,
   REACT_HOOK_FORM_ICON,
@@ -9,6 +10,7 @@ import {
   STYLED_COMP_ICON,
   SUPABASE_ICON,
   TAILWIND_ICON,
+  TYPESCRIPT_ICON,
 } from '../utils/constants';
 
 function Portfolio() {
@@ -23,6 +25,7 @@ function Portfolio() {
           demoUrl="https://saigonbrewers.vercel.app"
           iconNames={[
             NEXTJS_ICON,
+            TYPESCRIPT_ICON,
             REACT_ICON,
             NEXT_UI_ICON,
             TAILWIND_ICON,
@@ -39,6 +42,7 @@ function Portfolio() {
           githubUrl="https://github.com/kai-abat/hjb-pandeazucar-hotel.git"
           demoUrl="https://hjbpandeazucar.netlify.app"
           iconNames={[
+            JS_ICON,
             REACT_ICON,
             REACT_QUERY_ICON,
             STYLED_COMP_ICON,
