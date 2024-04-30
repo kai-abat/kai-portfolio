@@ -28,6 +28,10 @@ export const DEVICE_MAX_W = {
 
 export const JS_ICON = { name: 'Javacript', iconName: 'logos:javascript' };
 export const REACT_ICON = { name: 'React', iconName: 'logos:react' };
+export const NEXTJS_ICON = {
+  name: 'NextJs',
+  iconName: 'logos:nextjs-icon',
+};
 export const REACT_ROUTER_ICON = {
   name: 'React Router',
   iconName: 'devicon:reactrouter',
@@ -48,4 +52,12 @@ export const TAILWIND_ICON = {
 export const SUPABASE_ICON = {
   name: 'Supabase',
   iconName: 'logos:supabase-icon',
+};
+export const REACT_HOOK_FORM_ICON = {
+  name: 'React Hook Form',
+  iconName: 'simple-icons:reacthookform',
+};
+export const NEXT_UI_ICON = {
+  name: 'Next UI',
+  iconName: 'simple-icons:nextui',
 };
