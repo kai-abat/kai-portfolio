@@ -11,6 +11,7 @@ import {
   SUPABASE_ICON,
   TAILWIND_ICON,
   TYPESCRIPT_ICON,
+  ZOD_ICON,
 } from '../utils/constants';
 
 function Portfolio() {
@@ -30,6 +31,7 @@ function Portfolio() {
             NEXT_UI_ICON,
             TAILWIND_ICON,
             REACT_HOOK_FORM_ICON,
+            ZOD_ICON,
             SUPABASE_ICON,
           ]}
         />

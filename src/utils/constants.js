@@ -65,3 +65,7 @@ export const TYPESCRIPT_ICON = {
   name: 'TypeScript',
   iconName: 'devicon:typescript',
 };
+export const ZOD_ICON = {
+  name: 'Zod',
+  iconName: 'logos:zod',
+};
