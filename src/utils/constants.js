@@ -28,6 +28,18 @@ export const DEVICE_MAX_W = {
 
 export const JS_ICON = { name: 'Javacript', iconName: 'logos:javascript' };
 export const REACT_ICON = { name: 'React', iconName: 'logos:react' };
+export const NODEJS_ICON = {
+  name: 'NodeJS',
+  iconName: 'skill-icons:nodejs-light',
+};
+export const EXPRESS_ICON = {
+  name: 'Express',
+  iconName: 'skill-icons:expressjs-light',
+};
+export const MONGODB_ICON = {
+  name: 'MongoDB',
+  iconName: 'logos:mongodb-icon',
+};
 export const NEXTJS_ICON = {
   name: 'NextJs',
   iconName: 'logos:nextjs-icon',
@@ -68,4 +80,12 @@ export const TYPESCRIPT_ICON = {
 export const ZOD_ICON = {
   name: 'Zod',
   iconName: 'logos:zod',
+};
+export const SOCKETIO_ICON = {
+  name: 'Socket.io',
+  iconName: 'simple-icons:socketdotio',
+};
+export const RBOOTSTRAP_ICON = {
+  name: 'React Bootstrap',
+  iconName: 'devicon:reactbootstrap',
 };

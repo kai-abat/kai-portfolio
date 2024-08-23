@@ -9,6 +9,10 @@ import {
   SUPABASE_ICON,
   NEXTJS_ICON,
   TYPESCRIPT_ICON,
+  SOCKETIO_ICON,
+  NODEJS_ICON,
+  EXPRESS_ICON,
+  MONGODB_ICON,
 } from '../utils/constants';
 import TechIcon from './TechIcon';
 
@@ -24,6 +28,10 @@ function TechStack() {
     STYLED_COMP_ICON,
     TAILWIND_ICON,
     SUPABASE_ICON,
+    SOCKETIO_ICON,
+    NODEJS_ICON,
+    EXPRESS_ICON,
+    MONGODB_ICON,
   ];
 
   return (

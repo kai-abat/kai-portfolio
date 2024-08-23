@@ -1,12 +1,17 @@
 import Project from './Project';
 import Content from './Content';
 import {
+  EXPRESS_ICON,
   JS_ICON,
+  MONGODB_ICON,
   NEXTJS_ICON,
   NEXT_UI_ICON,
+  NODEJS_ICON,
+  RBOOTSTRAP_ICON,
   REACT_HOOK_FORM_ICON,
   REACT_ICON,
   REACT_QUERY_ICON,
+  SOCKETIO_ICON,
   STYLED_COMP_ICON,
   SUPABASE_ICON,
   TAILWIND_ICON,
@@ -17,6 +22,26 @@ import {
 function Portfolio() {
   return (
     <Content title="projects">
+      <Project position="left">
+        <Project.Image photo="/gchat.png" />
+        <Project.Details
+          title="GCHAT"
+          description="A simple chat application develop in MERN stack and Socket.io."
+          githubUrl="https://github.com/kai-abat/React-Chat-App.git"
+          demoUrl="https://react-chat-app-mlce.onrender.com"
+          iconNames={[
+            JS_ICON,
+            TYPESCRIPT_ICON,
+            REACT_ICON,
+            NODEJS_ICON,
+            EXPRESS_ICON,
+            MONGODB_ICON,
+            SOCKETIO_ICON,
+            RBOOTSTRAP_ICON,
+          ]}
+        />
+      </Project>
+
       <Project position="left">
         <Project.Image photo="/saigonbrewers-landingpage.png" />
         <Project.Details
