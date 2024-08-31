@@ -28,7 +28,7 @@ function Portfolio() {
           title="GCHAT"
           description="A simple chat application develop in MERN stack and Socket.io."
           githubUrl="https://github.com/kai-abat/React-Chat-App.git"
-          demoUrl="https://react-chat-app-mlce.onrender.com"
+          demoUrl="https://gchat-92kx.onrender.com"
           iconNames={[
             JS_ICON,
             TYPESCRIPT_ICON,
