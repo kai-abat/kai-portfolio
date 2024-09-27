@@ -13,15 +13,15 @@ function Profile() {
           Hi, I am Chaim Abat.
         </p>
         <p className="text-lg font-semibold tracking-wide">
-          Front-End Developer
+          Specialize in MERN Full-Stack Developer
         </p>
         <OtherProfile />
         {/* className="mx-auto w-11/12 indent-4 sm:w-10/12 lg:w-3/6" */}
         <p className="mx-auto text-center sm:w-10/12 sm:indent-10 lg:w-3/4 2xl:w-[40rem]">
-          I&apos;m a MERN-Stack developer based in philippines. I&apos;m
+          I&apos;m a MERN Full-Stack developer based in philippines. I am
           pasionate about crafting user-friendly web experience with a strong
-          foundation. I stay updated on the latest trends and eager to
-          contribute to innovative projects.
+          foundation in javascript and typescripting. I stay updated on the
+          latest trends and eager to contribute to innovative projects.
         </p>
         <TechStack />
       </div>
