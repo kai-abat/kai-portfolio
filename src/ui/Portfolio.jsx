@@ -26,7 +26,7 @@ function Portfolio() {
         <Project.Image photo="/gchat.png" />
         <Project.Details
           title="GCHAT"
-          description="A simple chat application develop in MERN stack and Socket.io."
+          description="A simple chat application develop in MERN stack and Socket.io. Note: The site will load slowly for the first time because I use Render hosting free tier service."
           githubUrl="https://github.com/kai-abat/React-Chat-App.git"
           demoUrl="https://gchat-92kx.onrender.com"
           iconNames={[
